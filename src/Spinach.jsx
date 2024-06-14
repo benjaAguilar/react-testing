@@ -4,7 +4,7 @@ function Spinach() {
   return (
     <>
       <p>I am a Spinach and you eat me!</p>
-      <Link to="/">go back</Link>
+      <Link to="/test">go back</Link>
     </>
   );
 }

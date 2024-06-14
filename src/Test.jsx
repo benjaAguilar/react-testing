@@ -1,4 +1,4 @@
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import Spinach from "./Spinach.jsx";
 import Popeye from "./Popeye.jsx";
 import Default from "./Default.jsx";
@@ -15,7 +15,12 @@ function Test() {
       ) : name === "spinach" ? (
         <Spinach />
       ) : (
-        <Default />
+        <>
+          <Default />
+          <Link to="popeye">Check popeye</Link>
+          <br />
+          <Link to="spinach">Check spinachs</Link>
+        </>
       )}
     </>
   );

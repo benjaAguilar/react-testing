@@ -1,22 +1,8 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import App from "./App.jsx";
+import { RouterProvider } from "react-router-dom";
 import "./index.css";
-import Test from "./Test.jsx";
-import ErrorPage from "./ErrorPage.jsx";
-
-const router = createBrowserRouter([
-  {
-    path: "/",
-    element: <App />,
-    errorElement: <ErrorPage />,
-  },
-  {
-    path: "test/:name",
-    element: <Test />,
-  },
-]);
+import router from "./router";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
